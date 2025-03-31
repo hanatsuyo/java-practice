@@ -5,12 +5,15 @@ public class Student {
     int score;
     static final int MAX_SCORE = 100;
 
-    void setScore(int newScore) {
-        score = newScore;
-        System.out.println(newScore);
+    Student(String name) {
+        this.name = name;
+    }
+
+    void setScore(int score) {
+        this.score = score;
     }
 
     void printScore() {
-        System.out.println(score);
+        System.out.println(this.name + "さんの点数は" + this.score);
     }
 }
