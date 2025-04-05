@@ -6,6 +6,5 @@ public class AutoBoxing {
         Integer numInt = 10;
         Integer sum = num + numInt;
         System.out.println(sum);
-
     }
 }
