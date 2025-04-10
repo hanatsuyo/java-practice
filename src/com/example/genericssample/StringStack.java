@@ -3,18 +3,18 @@ package com.example.genericssample;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StringStack {
-    private List<String> tasklist;
+public class StringStack<E> {
+    private List<E> tasklist;
 
     public StringStack() {
         tasklist = new ArrayList<>();
     }
 
-    public boolean push(String task) {
+    public boolean push(E task) {
         return tasklist.add(task);
     }
 
-    public String pop() {
+    public E pop() {
         if (tasklist.isEmpty()) {
             return null;
         }
