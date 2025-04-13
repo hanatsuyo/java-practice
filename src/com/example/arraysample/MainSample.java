@@ -9,10 +9,13 @@ public class MainSample {
         System.out.println(array2.length);
         System.out.println(array3.length);
 
+        // プリミティブ型はArrays.sort(ソートしたい配列)でソートができる
         int[] array4 = { 1, 2, 14, 3, 4, 0};
         System.out.println(array4);
         System.out.println(Arrays.toString(array4));
         Arrays.sort(array4);
         System.out.println(Arrays.toString(array4));
+
+        
     }
 }
